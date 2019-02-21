@@ -63,7 +63,7 @@ WScript.Sleep 3000
 if exec_return=0 Then
 ts.writeline "Backup database "&array(a,0)&" completed."
 exec_del_ok=1
-elseif exec_return=1 Then
+        elseif exec_return=1 Then
 ts.writeline "Backup failed."
 elseif exec_return=2 Then
 ts.writeline "Account or Password Error."
