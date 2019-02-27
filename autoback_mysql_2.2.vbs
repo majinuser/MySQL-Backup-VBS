@@ -56,7 +56,7 @@ ts.writeline times
 WScript.Sleep 3000
 ts.writeline "Starting to backup database "&array(a,0)
 WScript.Sleep 3000
-exec_return=objShell.run("%comspec% /c "&exec_dump&" -h "&array(a,2)&" -P "&array(a,3)&" -u"&array(a,4)&" -p"&array(a,5)&" "&array(a,6)&">"&array(a,1)&""&i2+k2&".bak",0,TRUE)
+exec_return=objShell.run("%comspec% /c "&exec_dump&" -h "&array(a,2)&" -P "&array(a,3)&" -u"&array(a,4)&" -p"&array(a,5)&" --skip-lock-tables "&array(a,6)&">"&array(a,1)&""&i2+k2&".bak",0,TRUE)
 WScript.Sleep 3000
 times=cdate(time)
 ts.writeline times
